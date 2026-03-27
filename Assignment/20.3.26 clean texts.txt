@@ -1,0 +1,77 @@
+Messy Sentences with Issues Identified
+omg!!! this movie was sooo goooood 😍🔥
+Slang: omg
+Emoji: 😍🔥
+Repetition: sooo, goooood
+idk what u mean lol 😂
+Slang: idk, u, lol
+Emoji: 😂
+Thisss is amazzing!!!
+Typos: Thisss, amazzing
+Repetition
+I can’t beleive it 😭
+Typo: beleive
+Emoji: 😭
+brb, gotta go rn
+Slang: brb, rn
+u r the besttt 💖
+Slang: u, r
+Emoji: 💖
+Repetition: besttt
+whyyyy is this happening???
+Repetition: whyyyy
+hahaha 😂😂 that was funny
+Emoji: 😂😂
+Repetition
+cant wait 4 tomorrow!!!
+Slang: 4 (for)
+i luv this song 🎶
+Slang: luv
+Emoji: 🎶
+whattttt?? 😳
+Repetition: whattttt
+Emoji: 😳
+this is soooo boring 😴
+Repetition: soooo
+Emoji: 😴
+omg i failed 😭😭
+Slang: omg
+Emoji: 😭😭
+pls help me asap!!!
+Slang: pls, asap
+that was lit 🔥
+Slang: lit
+Emoji: 🔥
+noooooo 😭
+Repetition: noooooo
+Emoji: 😭
+this app is trashhh
+Repetition: trashhh
+im sooo happyyyy 😍
+Slang: im
+Repetition: sooo, happyyyy
+Emoji: 😍
+LOL that joke 😂
+Slang: LOL
+Emoji: 😂
+whaaat is going on???
+Repetition: whaaat
+Common Issues Identified
+Slang and abbreviations (omg, lol, idk, brb)
+Emojis and special characters
+Spelling mistakes (beleive, amazzing)
+Repeated letters (soooo, happyyyy)
+Informal language (u, r, luv)
+Numbers used as words (4 → for)
+Preprocessing Needed
+
+To clean this text for machine learning or NLP tasks, the following steps are required:
+
+Lowercasing – Convert all text to lowercase
+Remove punctuation – Eliminate symbols like !, ?, etc.
+Remove emojis – Clean non-text characters
+Expand slang – Convert “lol” → “laugh out loud”
+Spell correction – Fix typos like “beleive” → “believe”
+Remove repeated characters – “soooo” → “so”
+Remove stopwords – Words like “is”, “the”, “and”
+Tokenization – Split text into words

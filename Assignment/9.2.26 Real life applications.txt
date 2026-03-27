@@ -1,0 +1,19 @@
+1. Face unlock on phone : ML learns my face and checks if it matches when I unlock my phone.
+
+2. Google search suggestions: ML guesses what I’m typing based on common searches and my past searches.
+
+3. Instagram / YouTube reels: ML shows videos based on what I like, watch, or skip.
+
+4. Gmail spam emails: ML checks emails and puts unwanted or fake ones in spam.
+
+5. Voice assistant (Google Assistant): ML understands my voice and answers or does tasks for me.
+
+6. Google Maps: ML shows the fastest route by checking traffic and road data.
+
+7. Phone keyboard autocorrect: ML fixes spelling mistakes based on how people usually type.
+
+8. Netflix / Prime video suggestions: ML suggests movies and shows based on what I watch.
+
+9. Online banking alerts: ML notices unusual transactions and warns me.
+
+10. Phone camera effects: ML improves photos by detecting faces and lighting.

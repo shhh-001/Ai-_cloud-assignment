@@ -1,0 +1,31 @@
+import pandas as pd
+
+data = {
+    "Attendance": [85, 60, 90, 50, 75],
+    "Study_Hours": [3, 1, 4, 1, 2],
+    "Marks": [78, 45, 88, 40, 65],
+    "Result": ["Pass", "Fail", "Pass", "Fail", "Pass"]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+data = {
+    "Age": [45, 30, 50, 28, 60],
+    "BMI": [29, 22, 31, 24, 33],
+    "Glucose": [160, 95, 180, 90, 200],
+    "Risk": ["High", "Low", "High", "Low", "High"]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+data = {
+    "Age": [22, 30, 19, 40, 27],
+    "Total_Purchases": [5, 8, 3, 12, 6],
+    "Category_Viewed": ["Clothing", "Electronics", "Beauty", "Electronics", "Clothing"],
+    "Recommended": ["Footwear", "Accessories", "Skincare", "Gadgets", "Bags"]
+}
+
+df = pd.DataFrame(data)
+print(df)

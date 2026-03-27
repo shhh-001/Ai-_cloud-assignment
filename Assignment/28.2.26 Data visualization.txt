@@ -1,0 +1,38 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("/content/storytelling_data.csv")
+
+# cleaning
+df['City'] = df['City'].str.strip().str.lower()
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+df['Salary'].fillna(df['Salary'].mean(), inplace=True)
+
+# 1. Bar Chart (City Count)
+city_count = df['City'].value_counts()
+
+plt.figure()
+city_count.plot(kind='bar')
+plt.title("Number of Employees by City")
+plt.xlabel("City")
+plt.ylabel("Count")
+plt.show()
+
+# Pie Chart
+
+gender_count = df['Gender'].value_counts()
+
+plt.figure()
+gender_count.plot(kind='pie', autopct='%1.1f%%')
+plt.title("Gender Distribution")
+plt.ylabel("")
+plt.show()
+
+#  Histogram
+plt.figure()
+plt.hist(df['Salary'])
+plt.title("Salary Distribution")
+plt.xlabel("Salary")
+plt.ylabel("Frequency")
+plt.show()
+

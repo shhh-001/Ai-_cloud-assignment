@@ -1,0 +1,50 @@
+students = []
+
+for i in range(5):
+    print(f"\nEnter details for Student {i+1}")
+
+    name = input("Name: ")
+    marks = float(input("Marks: "))
+
+    student = {
+        "name": name,
+        "marks": marks
+    }
+
+    students.append(student)
+
+topper = students[0]
+for student in students:
+    if student["marks"] > topper["marks"]:
+        topper = student
+
+total_marks = 0
+for student in students:
+    total_marks += student["marks"]
+class_average = total_marks / len(students)
+
+for student in students:
+    marks = student["marks"]
+
+    if marks >= 40:
+        grade = "A"
+    elif marks >= 35:
+        grade = "B"
+    elif marks >= 20:
+        grade = "C"
+    elif marks >= 10:
+        grade = "D"
+    else:
+        grade = "F"
+
+    student["grade"] = grade
+
+
+print("\n --- Student Report ---")
+
+for student in students:
+    print(f"Name: {student['name']}, Marks: {student['marks']}, Grade: {student['grade']}")
+
+print(f"\nTopper: {topper['name']} with {topper['marks']} marks")
+print(f"Class Average: {class_average:.2f}")
+

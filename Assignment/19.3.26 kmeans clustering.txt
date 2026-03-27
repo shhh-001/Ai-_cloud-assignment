@@ -1,0 +1,14 @@
+Mini Project Proposal
+
+Title: Customer Segmentation using K-Means Clustering
+
+Problem Statement: In today’s competitive market, businesses need to understand their customers better to improve sales and customer satisfaction. However, without proper analysis, it becomes difficult to identify different types of customers based on their behavior. This project aims to solve this problem by grouping customers into distinct segments based on their income and spending patterns.
+
+Dataset: The project will use the Mall Customer Dataset, which contains information such as Customer ID, Gender, Age, Annual Income, and Spending Score. These features help in analyzing customer purchasing behavior.
+
+Algorithm: K-Means Clustering will be used to perform customer segmentation. It is an unsupervised machine learning algorithm that groups similar data points into clusters based on their features. The optimal number of clusters will be determined using the Elbow Method.
+
+Expected Output: The output of this project will be clearly defined customer segments represented visually using graphs. Each cluster will represent a specific group, such as high-income high-spending customers or low-income low-spending customers. These insights will help businesses identify their target audience.
+
+Conclusion: This project will enable businesses to make better marketing decisions by understanding customer behavior. It can be used for targeted promotions, personalized services, and improving overall business strategies.
+

@@ -1,0 +1,32 @@
+import pandas as pd
+
+df = pd.read_csv("/content/sample_data.csv")
+
+print("Original Dataset Shape:", df.shape)
+print(df.head())
+
+# Check missing values
+print("\nMissing Values Before Cleaning:")
+print(df.isnull().sum())
+
+# Fill numerical missing values with mean
+for col in df.select_dtypes(include=['int64', 'float64']):
+    df[col].fillna(df[col].mean(), inplace=True)
+
+# Fill categorical missing values with mode
+for col in df.select_dtypes(include=['object']):
+    df[col].fillna(df[col].mode()[0], inplace=True)
+
+#Remove Duplicates
+df = df.drop_duplicates()
+
+for col in df.select_dtypes(include=['object']):
+    df[col] = df[col].str.lower().str.strip()
+
+print("\nCleaned Dataset Shape:", df.shape)
+print("\nMissing Values After Cleaning:")
+print(df.isnull().sum())
+
+print("\nCleaned Data Preview:")
+print(df.head())
+

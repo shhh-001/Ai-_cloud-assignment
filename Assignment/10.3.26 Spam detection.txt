@@ -1,0 +1,31 @@
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+
+data = {
+    "message": [
+        "Win a free iPhone now",
+        "Meeting at 6 pm",
+        "Get free coupons today",
+        "Your assignment is due tomorrow"
+    ],
+    "label": ["spam", "not spam", "spam", "not spam"]
+}
+
+df = pd.DataFrame(data)
+
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(df["message"])
+
+y = df["label"]
+
+model = MultinomialNB()
+model.fit(X, y)
+
+new_message = ["Congratulations you win free offer"]
+new_message_vector = vectorizer.transform(new_message)
+
+prediction = model.predict(new_message_vector)
+
+print("Prediction:", prediction)
+

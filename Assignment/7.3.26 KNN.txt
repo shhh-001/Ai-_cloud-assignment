@@ -1,0 +1,23 @@
+import pandas as pd
+from sklearn.neighbors import NearestNeighbors
+
+data = {
+    "Movie_A": [5, 5, 2],
+    "Movie_B": [3, 4, 1],
+    "Movie_C": [4, 4, 2]
+}
+
+users = ["User1", "User2", "User3"]
+
+df = pd.DataFrame(data, index=users)
+
+knn = NearestNeighbors(n_neighbors=2, metric='euclidean')
+knn.fit(df)
+
+distances, indices = knn.kneighbors([df.loc["User1"]])
+
+print("Nearest Neighbors for User1:")
+for i in range(len(indices[0])):
+    print(users[indices[0][i]], "with distance:", distances[0][i])
+
+# This shows that User2 is the closest neighbor to User1, meaning their movie preferences are very similar.
