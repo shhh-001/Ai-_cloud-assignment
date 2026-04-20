@@ -1,0 +1,21 @@
+import cv2
+
+# Load image
+image = cv2.imread("/content/download (21).jpg")
+
+# Check if image loaded properly
+if image is None:
+    print("Error: Image not found. Check file path.")
+else:
+    # Shape
+    print("Shape:", image.shape)
+    
+    # Pixel value
+    print("Pixel value at (0,0):", image[0,0])
+    
+    # Channels
+    print("Number of channels:", image.shape[2])
+
+
+
+print(image)

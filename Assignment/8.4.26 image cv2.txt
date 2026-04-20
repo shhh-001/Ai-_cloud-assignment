@@ -1,0 +1,16 @@
+import cv2
+from google.colab.patches import cv2_imshow
+
+image = cv2.imread("/content/download (21).jpg")
+
+if image is None:
+    print("Error: Image not found")
+else:
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    blur = cv2.GaussianBlur(image, (5,5), 0)
+    edges = cv2.Canny(image, 100, 200)
+
+    cv2_imshow(image)
+    cv2_imshow(gray)
+    cv2_imshow(blur)
+    cv2_imshow(edges)

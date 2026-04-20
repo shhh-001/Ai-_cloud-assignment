@@ -1,0 +1,28 @@
+import random
+
+responses = {
+    "hello": ["Hi!", "Hello!", "Hey there!"],
+    "how are you": ["I'm good!", "Doing great!", "All fine!"],
+    "bye": ["Goodbye!", "See you!", "Bye!"]
+}
+
+def chatbot():
+    print("Chatbot: Type 'exit' to stop")
+    while True:
+        user_input = input("You: ").lower()
+        
+        if user_input == "exit":
+            print("Chatbot: Bye!")
+            break
+        
+        found = False
+        for key in responses:
+            if key in user_input:
+                print("Chatbot:", random.choice(responses[key]))
+                found = True
+                break
+        
+        if not found:
+            print("Chatbot: I don't understand.")
+
+chatbot()
